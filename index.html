@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+
+    <style>
+
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .header{
+            background-color:rgba(255, 248, 248, 0.651);
+            display: flex;
+            height: 100px;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+        }
+        .left-section{
+            width: 200px;
+            display: flex;
+            text-align: center;
+            
+            
+        }
+        .left-section img{
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+        .middle-section{
+            display: flex;
+            flex:1;
+            text-align: center;
+         
+        }
+        img{
+        
+            margin-top: -3px;
+        }
+        button{
+            height: 44px;
+            margin-top: 25px;
+            padding: 10px;
+        }
+        input{
+            width: 400px;
+            height: 40px;
+            margin-top: 25px;
+            margin-left: 150px;
+            border-width: 1px;
+        }
+        input[placeholder="search"]
+        {
+            font-size: 20px;
+        }
+        .right-section{
+            width: 300px;
+            display: flex;
+           
+            
+        }
+        .right-section img{
+            margin-top: 28px;
+            margin-left: 30px;
+        }
+        .sidebar{
+            width:120px;
+            height: 550px;
+            background-color:rgba(255, 248, 248, 0.651);
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            position: fixed;
+            top:100px;
+            left: 0px;
+
+        }
+        .home ,.explore,.subscriptions,.originals,.youtube-music,.library{
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+           margin-bottom: 17px;
+           margin-top: 17px;
+        }
+        img,button,input:hover{
+            cursor:pointer;
+        }
+        .notifications{
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="left-section">
+            <img src="icons/hamburger-menu.svg" height="30px" >
+            <img src="icons/youtube-logo.svg" height="30px" >
+        </div>
+        <div class="middle-section">
+            <input type="text" placeholder="search">
+            <button style="margin-left: -1px;">
+                <img src="icons/search.svg" height="30px">
+            </button>
+            <button style="margin-left: 40px;">
+                <img src="icons/voice-search-icon.svg" height="30px">
+            </button>
+        </div>
+        <div class="right-section">
+            <img src="icons/upload.svg"  height="40px">
+            <img src="icons/youtube-apps.svg"  height="40px">
+            <div>
+                <img  src="icons/notifications.svg"  height="40px" style="position: relative;">
+                    <button  class="notifications-button"width= 10px height="10px" style="background-color:red;color:white;border-radius:20px;position: absolute; top:-10px;left:1250px;">3</button>
+             </div>
+            
+            <img src="icons/my-channel.jpeg"  height="40px" style="border-radius: 20px;">
+            
+        </div>
+      
+
+    </div>
+    <div class="sidebar">
+        <div class="home">
+            <img src="icons/home.svg" width="30px">
+            <div>home</div>
+        </div>
+        <div class="explore">
+            <img src="icons/explore.svg" width="30px">
+            <div>explore</div>
+        </div>
+        <div class="subscriptions">
+            <img src="icons/subscriptions.svg" width="30px">
+            <div>subscriptions</div>
+        </div>
+        <div class="originals">
+            <img src="icons/originals.svg" width="30px">
+            <div>originals</div>
+        </div>
+        <div class="youtube-music">
+            <img src="icons/youtube-music.svg" width="30px">
+            <div>youtube-music</div>
+        </div>
+        <div class="library">
+            <img src="icons/library.svg" width="30px">
+            <div>library</div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
